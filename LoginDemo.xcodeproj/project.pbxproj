@@ -15,6 +15,7 @@
 		3FC926B31D6FE66000148079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC926B11D6FE66000148079 /* LaunchScreen.storyboard */; };
 		3FC926BE1D6FE66000148079 /* LoginDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC926BD1D6FE66000148079 /* LoginDemoTests.swift */; };
 		3FC926C91D6FE66000148079 /* LoginDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC926C81D6FE66000148079 /* LoginDemoUITests.swift */; };
+		3FC926D91D6FE8FA00148079 /* ObjcLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC926D81D6FE8FA00148079 /* ObjcLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		3FC926C41D6FE66000148079 /* LoginDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC926C81D6FE66000148079 /* LoginDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDemoUITests.swift; sourceTree = "<group>"; };
 		3FC926CA1D6FE66000148079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC926D61D6FE8FA00148079 /* LoginDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoginDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		3FC926D71D6FE8FA00148079 /* ObjcLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcLoginViewController.h; sourceTree = "<group>"; };
+		3FC926D81D6FE8FA00148079 /* ObjcLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,9 @@
 				3FC926B11D6FE66000148079 /* LaunchScreen.storyboard */,
 				3FC926B41D6FE66000148079 /* Info.plist */,
 				3FC926AC1D6FE66000148079 /* LoginDemo.xcdatamodeld */,
+				3FC926D71D6FE8FA00148079 /* ObjcLoginViewController.h */,
+				3FC926D81D6FE8FA00148079 /* ObjcLoginViewController.m */,
+				3FC926D61D6FE8FA00148079 /* LoginDemo-Bridging-Header.h */,
 			);
 			path = LoginDemo;
 			sourceTree = "<group>";
@@ -261,6 +268,7 @@
 			files = (
 				3FC926A81D6FE66000148079 /* ViewController.swift in Sources */,
 				3FC926A61D6FE66000148079 /* AppDelegate.swift in Sources */,
+				3FC926D91D6FE8FA00148079 /* ObjcLoginViewController.m in Sources */,
 				3FC926AE1D6FE66000148079 /* LoginDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,10 +413,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LoginDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.magicalboy.LoginDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoginDemo/LoginDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -416,10 +427,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LoginDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.magicalboy.LoginDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoginDemo/LoginDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
