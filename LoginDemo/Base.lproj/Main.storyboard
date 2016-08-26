@@ -24,24 +24,26 @@
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqL-Yb-ouE">
-                                <rect key="frame" x="281" y="131" width="38" height="30"/>
+                                <rect key="frame" x="281" y="174" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E3s-NC-daP">
+                                <rect key="frame" x="20" y="115" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="join" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="E3s-NC-daP" firstAttribute="leading" secondItem="8Ji-Lt-Y2F" secondAttribute="leading" id="17r-Le-fo1"/>
                             <constraint firstItem="eqL-Yb-ouE" firstAttribute="centerX" secondItem="8Ji-Lt-Y2F" secondAttribute="centerX" id="9Z7-2k-346"/>
                             <constraint firstItem="8Ji-Lt-Y2F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="9y2-sF-inY"/>
-                            <constraint firstItem="eqL-Yb-ouE" firstAttribute="top" secondItem="8Ji-Lt-Y2F" secondAttribute="bottom" constant="24" id="JPW-Go-PWX"/>
+                            <constraint firstItem="eqL-Yb-ouE" firstAttribute="top" secondItem="E3s-NC-daP" secondAttribute="bottom" constant="29" id="bB1-2F-lHg"/>
+                            <constraint firstItem="E3s-NC-daP" firstAttribute="width" secondItem="8Ji-Lt-Y2F" secondAttribute="width" id="kYv-wq-7lk"/>
+                            <constraint firstItem="E3s-NC-daP" firstAttribute="top" secondItem="8Ji-Lt-Y2F" secondAttribute="bottom" constant="8" id="oTn-c0-64h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8Ji-Lt-Y2F" secondAttribute="trailing" id="ouF-sF-zFI"/>
-                            <constraint firstItem="8Ji-Lt-Y2F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tJh-jO-Kb9"/>
                             <constraint firstItem="8Ji-Lt-Y2F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xzK-zt-qDh"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="tJh-jO-Kb9"/>
-                            </mask>
-                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Swift" id="jCa-Jo-pm0"/>
                 </viewController>
