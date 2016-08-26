@@ -26,6 +26,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqL-Yb-ouE">
                                 <rect key="frame" x="281" y="174" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEA-eo-f2x"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E3s-NC-daP">
                                 <rect key="frame" x="20" y="115" width="560" height="30"/>
@@ -46,6 +49,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Swift" id="jCa-Jo-pm0"/>
+                    <connections>
+                        <outlet property="loginField" destination="8Ji-Lt-Y2F" id="2TC-fE-8I4"/>
+                        <outlet property="passwordField" destination="E3s-NC-daP" id="pOs-Zn-BZb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,6 +78,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYB-eO-qcW">
                                 <rect key="frame" x="281" y="121" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="nhg-ab-ynX" eventType="touchUpInside" id="N79-PC-X2u"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -19,4 +19,8 @@
     loginField.keyboardType = UIKeyboardTypePhonePad;
 }
 
+- (IBAction)loginAction:(UIButton *)sender {
+    [loginField resignFirstResponder];
+}
+
 @end
